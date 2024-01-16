@@ -1,0 +1,37 @@
+/* SurveyPostWidget.css */
+.survey-posts-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.survey-post-container {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed, considering margins */
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.survey-post-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.survey-post-detail {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .survey-post-container {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .survey-post-container {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
